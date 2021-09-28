@@ -2,6 +2,7 @@ import React from "react";
 import "./menu-item.style.scss";
 
 const MenuItem = ({ title, url, bg, size }) => (
+  
   <div className={`${size} menu-item`}>
     <div
       style={{
@@ -9,10 +10,14 @@ const MenuItem = ({ title, url, bg, size }) => (
       }}
       className="background"
     > </div>
-      <div className="content">
-        <h1 className="title">{title.toUpperCase()}</h1>
-        <span className="subtitle">SHOP NOW</span>
+
+    <div className="bg-gradient"></div>
+    <div className="title">
+      <div className="header">
+        <h1>{title.toUpperCase()}</h1>
       </div>
+    </div>
+
   </div>
 );
 
